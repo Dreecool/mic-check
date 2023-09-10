@@ -11,7 +11,7 @@ app.use(cors(
   {
     
     origin: ["https://mic-check-ycjn.vercel.app"],
-    methods: ["POST", "GET", "DELETE", "PUT"],
+    methods: ["POST, GET, DELETE, "PUT"],
    
   }
 ));
