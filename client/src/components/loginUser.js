@@ -20,7 +20,7 @@ const Login = () => {
 
   const Submit = () => {
 
-    Axios.post("http://localhost:3001/loginUser", loginInfo).then((response) => {
+    Axios.post("https://mic-check-1bchv91cz-dreecool.vercel.app/loginUser", loginInfo).then((response) => {
 
     if(response.data.message === "Login successful") {
       Navigate("/welcome")
