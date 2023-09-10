@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors(
   {
     
-    origin: ["https://mic-check-ycjn.vercel.app"],
+    origin: ["https://mic-check-ycjn-i6s8u26ms-dreecool.vercel.app"],
     methods: ["POST, GET, DELETE, PUT"]
    
   }
