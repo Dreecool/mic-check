@@ -7,7 +7,14 @@ const PORT = 3001
 const Register = require("./model/register")
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    
+    origin: ["https://mic-check-ycjn.vercel.app"],
+    methods: ["POST", "GET", "DELETE", "PUT"],
+   
+  }
+));
 
 
 mongoose.connect("mongodb+srv://francesdonaire:qepCBwN1ox6LgV32@mymongodb.ov5bhnp.mongodb.net/registerDb?retryWrites=true&w=majority", {
